@@ -66,6 +66,12 @@
   text-align: left;
 }
 
+/* Filters */
+
+.filter-item {
+  list-style-type: none;
+}
+
 /* Contact Me Button */
 .contact-button{
   padding: 0;
