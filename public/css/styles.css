@@ -1,0 +1,72 @@
+/* Section Backgrounds */
+.coloured-section {
+  background-color: #e3f6f5;
+}
+
+.white-section {
+  background-color: #FFF;
+}
+
+/* Containers */
+.container-fluid{
+  padding: 3% 5%;
+}
+
+/* Title Styles */
+
+.section-title {
+  padding: 0 0 1%;
+  font-size: 1.5rem;
+}
+
+.section-subtitle {
+  padding: 0 0 0.75rem;
+  font-size: 1rem;
+}
+
+
+/* Navigation Bar */
+.navbar {
+  padding: 1% 2% 1%;
+  text-align: left;
+}
+
+.navbar-brand {
+  font-size: 1.35rem;
+  font-weight: 100;
+}
+
+.very-bold-word {
+  font-weight: 700;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+#title {
+  height: 70.92px; width: 100%;
+}
+
+/* Table Styles */
+
+.table th {
+  vertical-align: inherit;
+}
+
+.project-link {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+}
+
+/* Contact Me Button */
+.contact-button{
+  padding: 0;
+}
