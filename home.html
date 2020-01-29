@@ -12,6 +12,12 @@
 
 <body>
 
+  <!-- Bootstrap Scripts   -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top coloured-section border-bottom">
 
@@ -148,38 +154,42 @@
               </tr>
             </thead>
 
-            <!-- Table Content -->
-            <tbody>
+            <form action="/" method="post">
 
-              <tr class="project-item">
-                <th id="1" scope="row">1</th>
-                <td><a href="/project" name="projectName" class="btn project-link" type="submit">Project Martyr</a></td>
-                <td><a href="/project" name="client" class="btn project-link" type="submit">Public Sector</a></td>
-                <td><a href="/project" name="roleName" class="btn project-link" type="submit">PMO and RAID management</a></td>
-                <td><a href="/project" name="grade" class="btn project-link" type="submit">Senior Consultant</a></td>
-                <td><a href="/project" name="startDate" class="btn project-link" type="submit">13-Jan-2020</a></td>
-              </tr>
+              <!-- Table Content -->
+              <tbody>
+
+                <tr class="project-item">
+                  <th id="1" scope="row"><input type="submit" name="projectRoleID" class="btn btn-link project-link very-bold-word" value=1></th>
+                  <td><input type="hidden" name="projectName" class="project-link" value="Project Martyr">Project Martyr</td>
+                  <td><input type="hidden" name="client" class="project-link" value="Public Sector">Public Sector</td>
+                  <td><input type="hidden" name="roleName" class="project-link" value="PMO and RAID management">PMO and RAID management</td>
+                  <td><input type="hidden" name="grade" class=" project-link" value="Senior Consultant">Senior Consultant</td>
+                  <td><input type="hidden" name="startDate" class=" project-link" value="13-Jan-2020">13-Jan-2020</td>
+                </tr>
 
 
-              <tr class="project-item">
-                <th id="2" scope="row">2</th>
-                <td><a href="/project" class="btn project-link" type="submit">Project Martyr</a></td>
-                <td><a href="/project" class="btn project-link" type="submit">Public Sector</a></td>
-                <td><a href="/project" class="btn project-link" type="submit">NFT Manager</a></td>
-                <td><a href="/project" class="btn project-link" type="submit">Senior Consultant</a></td>
-                <td><a href="/project" class="btn project-link" type="submit">19-Jan-2020</a></td>
-              </tr>
+                <tr class="project-item">
+                  <th id="2" scope="row"><input type="submit" name="projectRoleID" class="btn btn-link project-link very-bold-word" value=2></th>
+                  <td><input type="hidden" name="projectName" class="project-link" value="Project Martyr">Project Martyr</td>
+                  <td><input type="hidden" name="client" class="project-link" value="Public Sector">Public Sector</td>
+                  <td><input type="hidden" name="roleName" class="project-link" value="NFT Manager">NFT Manager</td>
+                  <td><input type="hidden" name="grade" class="project-link" value="Senior Consultant">Senior Consultant</td>
+                  <td><input type="hidden" name="startDate" class="project-link" value="19-Jan-2020">19-Jan-2020</td>
+                </tr>
 
-              <tr class="project-item">
-                <th id="3" scope="row">3</th>
-                <td><a href="/project" class="btn project-link" type="submit">Project Martyr</a></td>
-                <td><a href="/project" class="btn project-link" type="submit">Public Sector</a></td>
-                <td><a href="/project" class="btn project-link" type="submit">NFT Analyst</a></td>
-                <td><a href="/project" class="btn project-link" type="submit">Analyst</a></td>
-                <td><a href="/project" class="btn project-link" type="submit">19-Jan-2020</a></td>
-              </tr>
+                <tr class="project-item">
+                  <th id="3" scope="row"><input type="submit" name="projectRoleID" class="btn btn-link project-link very-bold-word" value=3></th>
+                  <td><input type="hidden" name="projectName" class="project-link" value="Project Martyr">Project Martyr</td>
+                  <td><input type="hidden" name="client" class="project-link" value="Public Sector">Public Sector</td>
+                  <td><input type="hidden" name="roleName" class="project-link" value="NFT Analyst">NFT Analyst</td>
+                  <td><input type="hidden" name="grade" class="project-link" value="Analyst">Analyst</td>
+                  <td><input type="hidden" name="startDate" class="project-link" value="19-Jan-2020">19-Jan-2020</td>
+                </tr>
 
-            </tbody>
+              </tbody>
+
+            </form>
 
           </table>
 
@@ -190,19 +200,6 @@
     </div>
 
   </section>
-
-
-  <!-- Bootstrap Scripts   -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-  <!-- Code to retrieve the role ID -->
-  <script>
-    $("#roles-table tbody th").click(function(event) {
-      alert("This is role number: " + this.id);
-    });
-  </script>
 
 </body>
 
