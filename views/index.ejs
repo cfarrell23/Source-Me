@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home | Source Me</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Homepage Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+  <!-- Bootstrap Scripts   -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- Data Table Scripts -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top coloured-section border-bottom">
+
+    <a class="navbar-brand"><span class="very-bold-word">Source</span><em> Me</em></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#title">Back to Top</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/">Log Out</a>
+        </li>
+      </ul>
+
+    </div>
+
+  </nav>
+  <section id="title" class="coloured-section"></section>
+
+  <!-- Projects View -->
+  <section id="all-projects" class="white-section">
+
+    <div class="container-fluid">
+      <h1 class="section-title">Projects</h1>
+      <hr>
+      <div class="row">
+
+        <!-- Filters Section -->
+        <div id="filters" class="col-md-3">
+          <form class="" action="/" method="post">
+            <h3 class="section-subtitle">Filters</h3>
+
+            <table class="table">
+
+              <thead>
+                <tr>
+                  <th scope="col">Client</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <div class="form-check">
+                    <td>
+                      <ul class="filter-item">
+
+                        <li>
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">
+                            Public Sector
+                          </label>
+                        </li>
+
+                        <li>
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                          <label class="form-check-label" for="defaultCheck2">
+                            Ryan Corp
+                          </label>
+                        </li>
+
+                        <li>
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                          <label class="form-check-label" for="defaultCheck3">
+                            Amsterdam PLC
+                          </label>
+                        </li>
+
+                      </ul>
+                    </td>
+                  </div>
+                </tr>
+              </tbody>
+
+              <thead>
+                <tr>
+                  <th scope="col">Grade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <div class="form-check">
+                    <td>
+                      <ul class="filter-item">
+
+                        <li>
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                          <label class="form-check-label" for="defaultCheck4">
+                            Analyst
+                          </label>
+                        </li>
+
+                        <li>
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                          <label class="form-check-label" for="defaultCheck5">
+                            Consultant
+                          </label>
+                        </li>
+
+                        <li>
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+                          <label class="form-check-label" for="defaultCheck6">
+                            Senior Consultant
+                          </label>
+                        </li>
+
+                      </ul>
+                    </td>
+                  </div>
+                </tr>
+              </tbody>
+            </table>
+
+          </form>
+        </div>
+
+        <!-- Project Roles List -->
+        <div id="project-roles" class="col-md-9">
+
+          <h3 class="section-subtitle">All Open Roles</h3>
+
+          <!-- <table id="roles-table" class="table table-hover">
+
+            Table Headings
+             <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Project Name</th>
+                <th scope="col">Client</th>
+                <th scope="col">Role Name</th>
+                <th scope="col">Grade</th>
+                <th scope="col">Start Date</th>
+              </tr>
+            </thead>
+
+            <form action="/" method="post">
+
+              Table Content -->
+          <!-- <tbody>
+
+                <tr class="project-item">
+                  <th id="1" scope="row"><input type="submit" name="projectRoleID" class="btn btn-link project-link very-bold-word" value=1></th>
+                  <td><input type="hidden" name="projectName" class="project-link" value="Project Martyr">Project Martyr</td>
+                  <td><input type="hidden" name="client" class="project-link" value="Public Sector">Public Sector</td>
+                  <td><input type="hidden" name="roleName" class="project-link" value="PMO and RAID management">PMO and RAID management</td>
+                  <td><input type="hidden" name="grade" class=" project-link" value="Senior Consultant">Senior Consultant</td>
+                  <td><input type="hidden" name="startDate" class=" project-link" value="13-Jan-2020">13-Jan-2020</td>
+                </tr>
+
+
+                <tr class="project-item">
+                  <th id="2" scope="row"><input type="submit" name="projectRoleID" class="btn btn-link project-link very-bold-word" value=2></th>
+                  <td><input type="hidden" name="projectName" class="project-link" value="Project Martyr">Project Martyr</td>
+                  <td><input type="hidden" name="client" class="project-link" value="Public Sector">Public Sector</td>
+                  <td><input type="hidden" name="roleName" class="project-link" value="NFT Manager">NFT Manager</td>
+                  <td><input type="hidden" name="grade" class="project-link" value="Senior Consultant">Senior Consultant</td>
+                  <td><input type="hidden" name="startDate" class="project-link" value="19-Jan-2020">19-Jan-2020</td>
+                </tr>
+
+                <tr class="project-item">
+                  <th id="3" scope="row"><input type="submit" name="projectRoleID" class="btn btn-link project-link very-bold-word" value=3></th>
+                  <td><input type="hidden" name="projectName" class="project-link" value="Project Martyr">Project Martyr</td>
+                  <td><input type="hidden" name="client" class="project-link" value="Public Sector">Public Sector</td>
+                  <td><input type="hidden" name="roleName" class="project-link" value="NFT Analyst">NFT Analyst</td>
+                  <td><input type="hidden" name="grade" class="project-link" value="Analyst">Analyst</td>
+                  <td><input type="hidden" name="startDate" class="project-link" value="19-Jan-2020">19-Jan-2020</td>
+                </tr>
+
+              </tbody> -->
+
+          <!-- </form> -->
+
+          <!-- </table> -->
+          <table id="data-table" class="table table-hover">
+            <thead>
+              <tr>
+                <th>Request Number</th>
+                <th>Role Number</th>
+                <th>Project Name</th>
+                <th>Client</th>
+                <th>Role Name</th>
+                <th>Grade</th>
+                <th>Start Date</th>
+              </tr>
+            </thead>
+          </table>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+
+</html>
+<script>
+  $(document).ready(function() {
+    $('#data-table').DataTable({
+      "ajax": "all-roles-alternate.json",
+      "columns": [{
+          "data": "Request Number"
+        },
+        {
+          "data": "Role Number"
+        },
+        {
+          "data": "Project Name"
+        },
+        {
+          "data": "Client"
+        },
+        {
+          "data": "Role Name"
+        },
+        {
+          "data": "Grade"
+        },
+        {
+          "data": "Start Date"
+        }]
+    });
+  });
+</script>

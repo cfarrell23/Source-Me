@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 25
+    },
+    "auditLog": "C:\\Users\\cfarrell\\Desktop\\Source-Me\\log\\.241ffcc02983cd35e1652f0f4a85e402201bed9b-audit.json",
+    "files": [
+        {
+            "date": 1582800387188,
+            "name": "C:\\Users\\cfarrell\\Desktop\\Source-Me\\log\\winston.log..Th-02-yyyy",
+            "hash": "987d3520d79df4622dc4c97219d0486b"
+        }
+    ]
+}
